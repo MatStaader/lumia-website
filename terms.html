@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for Lumia Bots - Privacy-first Discord bots powered by local AI.">
+    <title>Terms of Service — Lumia Bots</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a12; color: #e8e8f0; line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        header { text-align: center; margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; background: linear-gradient(135deg, #fff 0%, #9ca3af 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .meta { color: #9ca3af; font-size: 0.95rem; }
+        .section { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: #06b6d4; }
+        p { margin-bottom: 16px; color: #d1d5db; }
+        ul { margin-left: 24px; margin-bottom: 16px; color: #d1d5db; }
+        li { margin-bottom: 8px; }
+        a { color: #06b6d4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact { background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 12px; padding: 24px; margin-top: 40px; }
+        .contact h3 { color: #06b6d4; margin-bottom: 12px; }
+        footer { text-align: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); color: #6b7280; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Terms of Service</h1>
+            <p class="meta">Last updated: December 2024 | Version 1.0</p>
+        </header>
+
+        <section>
+            <h2>1. Acceptance of Terms</h2>
+            <p>By adding Lumia Bots (TL;DR, Sentinel, Mnemosyne) to your Discord server or using their features, you agree to these Terms. If you disagree, do not use the bots.</p>
+        </section>
+
+        <section>
+            <h2>2. Description of Service</h2>
+            <p>Lumia Bots are Discord bots that run locally on your hardware:</p>
+            <ul>
+                <li><strong>TL;DR</strong> — Records voice meetings, transcribes with Whisper, extracts action items via local LLM</li>
+                <li><strong>Sentinel</strong> — Semantic auto-moderation, raid detection, FAQ automation, welcome onboarding</li>
+                <li><strong>Mnemosyne</strong> — Knowledge base with semantic search, fact extraction, Q&A</li>
+            </ul>
+            <p>All AI processing runs locally on your hardware via Ollama. No data is sent to external APIs.</p>
+        </section>
+
+        <section>
+            <h2>3. Privacy & Data</h2>
+            <p>We are committed to privacy:</p>
+            <ul>
+                <li>No message content, user data, or server data is sent to Lumia developers or third parties</li>
+                <li>All AI inference runs locally on your GPU via Ollama (Llama, Whisper, nomic-embed)</li>
+                <li>Data stored locally in SQLite (tasks, config) and ChromaDB (embeddings)</li>
+                <li>No analytics, tracking, telemetry, or usage statistics collected</li>
+                <li>Payment data handled solely by Stripe (we never see card details)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Subscription & Billing</h2>
+            <ul>
+                <li>Pro tiers: $10/mo per bot (early bird), $25/mo bundle (all 3)</li>
+                <li>Billed monthly via Stripe; cancel anytime — access continues until period ends</li>
+                <li>7-day refund for new subscriptions; then prorated</li>
+                <li>Early-bird pricing ($10/mo) locked in forever if subscribed before Dec 1, 2026</li>
+                <li>All billing handled by Stripe; we never see payment details</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Acceptable Use</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Use bots for illegal activities, harassment, spam, or malicious purposes</li>
+                <li>Reverse engineer, decompile, or attempt to extract model weights</li>
+                <li>Resell or redistribute the bots without permission</li>
+                <li>Attempt to bypass Pro feature gates or payment systems</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Disclaimer & Limitation of Liability</h2>
+            <p>Bots are provided "as-is" without warranties. We are not liable for:</p>
+            <ul>
+                <li>Inaccurate transcriptions, task extractions, or AI-generated responses</li>
+                <li>Moderation false positives/negatives</li>
+                <li>Data loss, downtime, or service interruptions</li>
+                <li>Actions taken based on bot outputs</li>
+            </ul>
+            <p>Maximum liability: amount paid in the preceding 12 months.</p>
+        </section>
+
+        <section>
+            <h2>7. Termination</h2>
+            <p>We may suspend access for ToS violations. You may remove bots anytime. Pro access continues until billing period ends.</p>
+        </section>
+
+        <section>
+            <h2>8. Changes to Terms</h2>
+            <p>We may update these Terms. Material changes announced in support server and via email (if provided). Continued use = acceptance.</p>
+        </section>
+
+        <section>
+            <h2>9. Governing Law</h2>
+            <p>These Terms governed by laws of your jurisdiction (consumer protection laws apply).</p>
+        </section>
+
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>Questions about these Terms? Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Support server: <a href="https://discord.gg/your-invite">discord.gg/lumia-bots</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Lumia Bots. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

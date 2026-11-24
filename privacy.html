@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Lumia Bots - Privacy-first Discord bots powered by local AI. No data collection, no tracking, no external APIs.">
+    <title>Privacy Policy — Lumia Bots</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a12; color: #e8e8f0; line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        header { text-align: center; margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; background: linear-gradient(135deg, #fff 0%, #9ca3af 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .meta { color: #9ca3af; font-size: 0.95rem; }
+        .section { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: #06b6d4; }
+        h3 { font-size: 1.1rem; font-weight: 600; margin: 20px 0 12px; color: #fbbf24; }
+        p { margin-bottom: 16px; color: #d1d5db; }
+        ul { margin-left: 24px; margin-bottom: 16px; color: #d1d5db; }
+        li { margin-bottom: 8px; }
+        a { color: #06b6d4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        th { color: #06b6d4; font-weight: 600; }
+        td { color: #d1d5db; }
+        .highlight { background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .highlight h3 { color: #06b6d4; margin-bottom: 12px; }
+        footer { text-align: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); color: #6b7280; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="meta">Last updated: December 2024 | Version 1.0</p>
+        </header>
+
+        <div class="highlight">
+            <h3>TL;DR: We don't collect your data.</h3>
+            <p>Lumia Bots run entirely on your hardware. No message content, user data, or server data ever leaves your machine. No analytics, no tracking, no external APIs for AI processing.</p>
+        </div>
+
+        <section>
+            <h2>1. Data We Do NOT Collect</h2>
+            <p>We (Lumia developers) do not receive, store, or process:</p>
+            <ul>
+                <li>Message content, DMs, or voice audio</li>
+                <li>User IDs, usernames, avatars, or profiles</li>
+                <li>Server names, member lists, roles, or permissions</li>
+                <li>Meeting transcripts, tasks, or knowledge base content</li>
+                <li>Usage statistics, analytics, or telemetry</li>
+                <li>IP addresses, device info, or location data</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. How the Bots Work (Locally)</h2>
+            <p>All AI processing runs on <strong>your hardware</strong> via <a href="https://ollama.ai" target="_blank">Ollama</a>:</p>
+            <table>
+                <thead>
+                    <tr><th>Bot</th><th>Models (Local)</th><th>Data Stored Locally</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>TL;DR</td><td>Whisper large-v3 (transcription), Llama-3.1-8B (extraction)</td><td>SQLite: tasks, meetings; Temp: audio files</td></tr>
+                    <tr><td>Sentinel</td><td>Llama-3.1-8B (auto-mod, FAQ, raid analysis)</td><td>SQLite: config, FAQ, logs; ChromaDB: embeddings (Pro)</td></tr>
+                    <tr><td>Mnemosyne</td><td>nomic-embed-text (embeddings), Llama-3.1-8B (QA, facts)</td><td>ChromaDB: embeddings; SQLite: config, KB entries</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3. Data Storage</h2>
+            <ul>
+                <li><strong>SQLite databases</strong> — Tasks, config, FAQ, logs (on your disk)</li>
+                <li><strong>ChromaDB</strong> — Vector embeddings for semantic search (on your disk)</li>
+                <li><strong>Temporary files</strong> — Audio recordings, deleted after processing</li>
+                <li><strong>No cloud databases</strong> — Zero external data persistence</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. What We (Developers) See</h2>
+            <p>Only aggregated, anonymous data visible in our Stripe dashboard:</p>
+            <ul>
+                <li>Subscription status (active/cancelled)</li>
+                <li>Plan tier (Pro/Enterprise)</li>
+                <li>Billing email (for receipts)</li>
+            </ul>
+            <p>We <strong>never</strong> see: server names, member counts, message content, or any Discord data.</p>
+        </section>
+
+        <section>
+            <h2>5. Third-Party Services</h2>
+            <table>
+                <thead>
+                    <tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Stripe</td><td>Payments & subscriptions</td><td>Email, name, billing address, card (handled by Stripe)</td></tr>
+                    <tr><td>Discord</td><td>Bot platform</td><td>Standard Discord API data (messages bot receives, voice audio)</td></tr>
+                    <tr><td>Cloudflare</td><td>Website hosting, DNS, email routing</td><td>Website analytics (optional, anonymized)</td></tr>
+                </tbody>
+            </table>
+            <p>We do not sell data. Stripe and Discord have their own privacy policies.</p>
+        </section>
+
+        <section>
+            <h2>6. Data Retention & Deletion</h2>
+            <ul>
+                <li><strong>Local bot data:</strong> You control it. Remove bot = data stays on your disk until you delete it</li>
+                <li><strong>Stripe data:</strong> Retained per Stripe's policy (financial records, typically 7+ years for tax)</li>
+                <li><strong>Account deletion:</strong> Email us to request Stripe data removal (where legally permissible)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Your Rights</h2>
+            <ul>
+                <li>Access: Request copy of data Stripe holds on you</li>
+                <li>Rectification: Update billing email via Stripe portal</li>
+                <li>Erasure: Request deletion (where not legally required to retain)</li>
+                <li>Portability: Export your local bot data anytime (SQLite/JSON)</li>
+                <li>Object: Opt-out of optional analytics (Cloudflare Web Analytics)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>Bots not directed at children under 13. We don't knowingly collect children's data. Discord requires 13+.</p>
+        </section>
+
+        <section>
+            <h2>9. Security</h2>
+            <ul>
+                <li>All bot-to-Discord communication over TLS (Discord API)</li>
+                <li>Website served over HTTPS (Cloudflare)</li>
+                <li>Payment data never touches our servers (Stripe Elements)</li>
+                <li>Local databases: your OS permissions control access</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>10. Changes to This Policy</h2>
+            <p>Updates posted here and announced in support server. Material changes emailed (if billing email provided).</p>
+        </section>
+
+        <section>
+            <h2>11. Contact</h2>
+            <p>Privacy questions: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Support server: <a href="https://discord.gg/your-invite">discord.gg/lumia-bots</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Lumia Bots. Privacy is not a feature — it's the foundation.</p>
+        </footer>
+    </div>
+</body>
+</html>
